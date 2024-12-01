@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos</title>
+    <title>Cursos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -54,11 +54,10 @@
 
         /*Others*/
         .card-title {
-            width: 40%;
-            text-align: center;
+                text-align: center;
             padding: 30px 20px;
             display: flex;
-            align-items: center;
+            align-items: start;
             flex-direction: column;
         }
 
@@ -68,7 +67,7 @@
         }
 
         .title {
-            text-align: center;
+            text-align: left;
             font-size: 25px;
             font-weight: 700;
             color: #73000A;
@@ -77,88 +76,29 @@
         }
         
         .subtitle {
-            text-align: center;
+            text-align: left;
             font-size: 20px;
-            font-family: "Great Vibes", serif;
-            font-weight: 700;
+            font-weight: 400;
             color: #333333;
-            margin: 20px 0px;
+            margin-bottom: 0px;
+            padding-bottom: 5px;
             line-height: 1;
+            border-bottom: 1px solid #33333380;
+            position: relative;
         }
+        .subtitle::after {
+            top: -1px;
+            position: absolute;
+            width: max-content;
+            padding: 5px;
+            content: ' Con Certificado';
+            letter-spacing: 0.06em;
+            font-weight: 600;
+            background-color: #73000A;
+            color: #f4f4f4;
+            font-size: 10px;
 
-        .absolute-image {
-            position: absolute;
-            background-position: center;
-            background-size: cover;
-            border-radius: 49% 51% 48% 52% / 35% 51% 49% 65%;
-            width: 280px;
-            height: 70%;
-            top: 15%;
-            right: 20px;
-            z-index: 2;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
         }
-
-        .absolute-shadow-1 {
-            position: absolute;
-            border-radius: 41% 59% 63% 37% / 39% 39% 61% 61%;
-            width: 280px;
-            height: 70%;
-            top: 12%;
-            right: 30px;
-            z-index: 1;
-            background-color: #fff;
-        }
-
-        .absolute-shadow-2 {
-            position: absolute;
-            border-radius: 24% 76% 63% 37% / 62% 39% 61% 38%;
-            width: 280px;
-            height: 70%;
-            top: 20%;
-            right: 5px;
-            z-index: 1;
-            background-color: #333333;
-        }
-        /*Start globe*/
-        .absolute-globe-1 {
-            opacity: 0.9;
-            position: absolute;
-            width: 150px;
-            height: 150px;
-            top: 20%;
-            right: -30px;
-            z-index: 3;
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-        .absolute-globe-2 {
-            opacity: 0.9;
-            transform: rotate(-25deg);
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            top: 40%;
-            right: 250px;
-            z-index: 3;
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-        .absolute-globe-3{
-            opacity: 0.9;
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            top: 70%;
-            right: 70px;
-            z-index: 3;
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-        /*End globe*/
         .card-pie{
             background-image: url('images/back.png');
             background-position: center;
@@ -182,11 +122,19 @@
             background-color: #fff;
 
         }
-
+        .card-description h6{
+            font-weight: 300;
+            font-size: 11px;
+            color: #fff;
+            line-height: 1.1;
+            margin-bottom: 2px;
+            margin-top: 2px;
+            padding-bottom: 2px;
+            padding-top: 2px;
+        }
         .card-description p {
-            text-align: left;
-            width: 50%;
             font-size: 10px;
+            font-weight: 200;
             color: #fff;
             line-height: 1.1;
         }
@@ -199,15 +147,9 @@
             <div class="content">
                 <div class="card-title">
                     <img src="images/logo.png" alt="Logo Colegio">
-                    <h2 class="subtitle">Feliz Cumpleaños</h1>
-                    <h1 class="title">Luis José Hidalgo Rodríguez</h1>
+                    <h2 class="subtitle">Curso <span style="color: #73000A;">disponible</span> |</h1>
+                    <h1 class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quisquam nostrum, molestias suscipit alias quae nulla doloremque sapiente culpa iusto quas necessitatibus porro quam sint, error atque perferendis commodi pariatur.</h1>
                 </div>
-                <div class="absolute-shadow-1"></div>
-                <div class="absolute-image" style="background-image: url(images/profile.png);"></div>
-                <div class="absolute-shadow-2"></div>
-                <div class="absolute-globe-1" style="background-image: url(images/globe1.png);"></div>
-                <div class="absolute-globe-2" style="background-image: url(images/globe1.png);"></div>
-                <div class="absolute-globe-3" style="background-image: url(images/globe1.png);"></div>
                 <div class="card-pie">
                     <div class="card-description">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
@@ -218,7 +160,11 @@
                             passages, and more recently with desktop publishing software like Aldus PageMaker including
                             versions of Lorem Ipsum.
                         </p>
+                        <div style="border-top: 1px solid #f4f4f4; padding: 10px 0px;">
+                            <h6><strong>Fecha de Inicio:</strong> 12/12/2024 | <strong>Fecha Fin:</strong> 12/12/2025 | <strong>Horas Lectivas:</strong> 4 hrs</h6>
+                        </div>
                     </div>
+                   
                 </div>
             </div>
         </div>
