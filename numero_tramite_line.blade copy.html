@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa de partes | Seguimiento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body style="font-family: 'Prompt', sans-serif; margin: 0; padding: 0; font-size: 11px; background-color: #f4f4f4;">
+    <div style="width: 100%; max-width: 600px; margin: 0 auto; border: 1px solid #e0e0e0; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); background-image: url('{{url('app/img/otros/back.png')}}'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+        <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f4f4f462;">
+            <tr>
+                <td style="text-align: left; padding: 30px 20px 10px 20px;">
+                    <img src="{{$logo_empresa}}" alt="Logo Colegio" style="width: 70px; height: 70px;">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left; padding: 10px 20px;">
+                    <h2 style="font-size: 20px; font-weight: 400; color: #333333; margin: 0;">
+                        Hola, <b>{{$receptor}}</b>
+                    </h2>
+                    <p style="color: #333333; margin: 5px 0;">Agradecemos tu comunicación con nosotros.</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 0px;">
+                    <div style="background-color: #891c2ee5; padding: 20px; color: #fff;">
+                        <div style="background-color: #f4f4f4; padding: 10px; text-align: left; margin-bottom: 20px; font-size: 12px; color: #333333">
+                            Tu número de trámite es: <b style="color: #73000A;">{{$numero_tramite}}</b>
+                        </div>
+                        <p style="font-size: 10px; font-weight: 200; color: #fff; line-height: 1.1;">
+                            Para conocer el estado de tu trámite, visita el apartado de <a href="{{$pagina_seguimiento}}" target="_blank" style="color: #fafafa; font-weight: 600;">Mesa de Partes Virtual</a> y obtén más información.
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div style="background-color: #73000A; color: #f4f4f4; text-align: center; padding: 5px; font-size: 8px; font-weight: 700;">
+            <p>{{$remitente}} &copy; 2024</p>
+        </div>
+    </div>
+</body>
+
+</html>
