@@ -10,48 +10,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body style="font-family: 'Prompt', sans-serif; margin: 0; padding: 0; font-size: 11px; background-color: #f4f4f4;">
-    <div style="width: 100%; max-width: 600px; margin: 0 auto; border: 1px solid #e0e0e0; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); background-image: url('{{url('app/img/otros/back.png')}}'); background-position: center; background-repeat: no-repeat; background-size: cover;">
-        <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f4f4f462; overflow: hidden;">
-            <tr>
-                <td style="text-align: center; padding: 30px 20px;">
-                    <div style="width: 40%">
-                        <img src="{{$logo_empresa}}" alt="Logo Colegio" style="width: 70px; height: 70px;">
-                        <h2 style="font-size: 20px; font-weight: 700; color: #333333; margin: 10px 0;">
-                            {{$nombre_festividad}}
-                        </h2>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td style="padding: 0px; position: relative; ">
-                    <div style="text-align: right; position: absolute; border: 1px solid black">
-                        <div style="background-image: url({{$imagen_festividad}});
-                         background-position: center; background-size: cover; width: 280px; height: 290px; 
-                         border-radius: 50%; margin: 0 auto; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-                         position: absolute; z-index: 2;  top: -150px; right: -580px;"></div>
-                        <div style="width: 280px; height: 290px; background-color: #fff;
-                        border-radius: 50%; margin: 0 auto; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-                        position: absolute; z-index: 1;  top: -160px; right: -570px;"></div>
-                        <div style="width: 280px; height: 290px; background-color: #333;
-                        border-radius: 50%; margin: 0 auto; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-                        position: absolute; z-index: 1;  top: -140px; right: -590px;"></div>
-                        <div style="opacity: 0.9; width: 150px; height: 150px; background-image: url({{url('app/img/otros/globe1.png')}}); background-position: center; background-size: contain; background-repeat: no-repeat; position: absolute; top: -120px; right: -640px; z-index: 3;"></div>
-                        <div style="opacity: 0.9; transform: rotate(-25deg); width: 100px; height: 100px; background-image: url({{url('app/img/otros/globe1.png')}}); background-position: center; background-size: contain; background-repeat: no-repeat; position: absolute; top: -40px; right: -350px; z-index: 3;"></div>
-                        <div style="opacity: 0.9; width: 200px; height: 200px; background-image: url({{url('app/img/otros/globe1.png')}}); background-position: center; background-size: contain; background-repeat: no-repeat; position: absolute; top: 10px; right: -570px; z-index: 3;"></div>
-                    </div>
-                    <div style="background-color: #891c2ee5; padding: 20px; color: #fff; ">
-                        <p style="text-align: justify; font-size: 10px; color: #fff; line-height: 1.1; width: 50%;">
-                            {{$descripcion_festividad}}
-                        </p>
-                    </div>
-                </td>
-            </tr>
-        </table>
-        <div style="background-color: #73000A; color: #f4f4f4; text-align: center; padding: 5px; font-size: 8px; font-weight: 700;">
-            <p>{{$remitente}} &copy; 2024</p>
-        </div>
-    </div>
+<body style="margin: 0; padding: 0; font-family: 'Prompt', sans-serif; background-color: #f4f4f4;">
+    <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f4f4f4; padding: 20px;">
+        <tr>
+            <td align="center">
+                <!-- Contenedor Principal -->
+                <table width="600" cellpadding="0" cellspacing="0" style="background-image: url('{{url('app/img/otros/back-festivity.png')}}'); background-position: center; background-repeat: no-repeat; background-size: cover; border: 1px solid #e0e0e0; box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);">
+                    <!-- Encabezado -->
+                    <tr>
+                        <td align="left" style="padding: 30px;">
+                            <img src="{{$logo_empresa}}" alt="Logo Colegio" style="width: 70px; height: 70px; display: block;">
+                            <h2 style="font-size: 20px; font-weight: bold; color: #333333; margin: 10px 0; ">{{$nombre_festividad}}</h2>
+                        </td>
+                        <td align="right" style="padding: 10px; text-align: center; vertical-align:middle">
+                            <div style="display: flex; justify-content: flex-end; gap: 10px;">
+                                <img src="{{$imagen_festividad}}" alt="Foto de la festividad" style="width: 230px; height: 230px; border-radius: 50%; display: block; box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); opacity: 0.9; border: 3px solid #c752658a">
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Mensaje -->
+                    <tr>
+                        <td align="center" style="background-color: #891c2e; color: #ffffff; padding: 20px;" colspan="2">
+                            <p style="font-size: 12px; line-height: 1.6; text-align: justify; margin: 0; font-weight: lighter">
+                                {{$descripcion_festividad}}
+                            </p>
+                        </td>
+                    </tr>
+                    <!-- Pie de página -->
+                    <tr>
+                        <td align="center" style="background-color: #73000A; color: #f4f4f4; padding: 10px;" colspan="2">
+                            <p style="font-size: 10px; margin: 0;">{{$remitente}} &copy; 2024</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 
 </html>
